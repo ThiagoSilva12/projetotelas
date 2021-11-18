@@ -1,9 +1,18 @@
 import * as React from 'react';
-import { ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Button, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { formato } from '../css/Styles';
 export default function Home({navigation}){
+
+
+   
+
     return(
+
         <View>
+
+
+
+        
 <View style={formato.menu}>
     <TouchableOpacity style={formato.btn}
     onPress={()=>{
@@ -11,8 +20,16 @@ export default function Home({navigation}){
     }}>
         <Text style={formato.txtbtn}>Camera </Text>
     </TouchableOpacity>
-</View>
 
+<TouchableOpacity style={formato.btn}
+    onPress={()=>{
+        navigation.navigate("Galeria");
+    }}>
+        <Text style={formato.txtbtn}>Galeria </Text>
+    </TouchableOpacity>
+
+
+</View>
         </View>
     );
 }

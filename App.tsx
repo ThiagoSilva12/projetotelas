@@ -3,7 +3,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './screens/Home';
-import Camera from './screens/Camera';
+import Camera from './screens/TelaCamera';
 import Galeria from './screens/Galeria';
 const Pilha =createNativeStackNavigator();
 
