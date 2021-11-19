@@ -29,6 +29,25 @@ export default function Home({navigation}){
     </TouchableOpacity>
 
 
+
+    <TouchableOpacity style={formato.btn}
+    onPress={()=>{
+        navigation.navigate("Mapa");
+    }}>
+        <Text style={formato.txtbtn}>Mapa Google </Text>
+    </TouchableOpacity>
+
+
+
+
+    <TouchableOpacity style={formato.btn}
+    onPress={()=>{
+        navigation.navigate("PaginaWeb");
+    }}>
+        <Text style={formato.txtbtn}>PaginaWeb </Text>
+    </TouchableOpacity>
+
+    
 </View>
         </View>
     );
